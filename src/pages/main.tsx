@@ -1,6 +1,13 @@
 import {Fragment} from 'react';
 
-function Main(): JSX.Element {
+type MainProps = {
+  [key: string]: string | boolean;
+}
+
+function Main(props: MainProps): JSX.Element {
+  // eslint-disable-next-line no-console
+  console.log(props);
+
   return (
     <Fragment>
       <p>Welcome to my homepage.</p>

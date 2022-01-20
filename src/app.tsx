@@ -4,12 +4,11 @@ import Main from './pages/main';
 import About from './pages/about';
 
 /*
-  ОПИСАНИЕ:
-  используя компоненты BrowserRouter, Route
-  и Routes из пакета react-router-dom,
-  мы можем добавить в приложение постраничную
-  навигацию. Ну ещё Link и Outlet, пример их использования
-  посмотрите в components/layout.jsx
+  Теперь рассмотрим, как передать
+  пропсы в компонент, который передан в element.
+  Короткий ответ - как в любой другой!
+  О том, как работать со служебными попсами,
+  мы поговорим в 4 шаге.
 */
 
 function App (): JSX.Element {
@@ -17,7 +16,7 @@ function App (): JSX.Element {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route index element={<Main />} />
+          <Route index element={<Main firstProp='test' secondProp />} />
           <Route path='about' element={<About />} />
         </Route>
       </Routes>
