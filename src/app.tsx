@@ -5,6 +5,7 @@ import About from './pages/about';
 import Secret from './pages/secret';
 import Error from './error';
 import GoAway from './pages/go-away';
+import PrivateRoute from './components/private-route';
 
 function App (): JSX.Element {
   return (
@@ -14,7 +15,12 @@ function App (): JSX.Element {
           <Route index element={<Main />} />
           <Route path='about'>
             <Route index element={<About />} />
-            <Route path='secret' element={<Secret />} />
+            <Route path='secret' element={
+              <PrivateRoute>
+                <Secret />
+              </PrivateRoute>
+            }
+            />
           </Route>
           <Route path='go-away' element={<GoAway />} />
         </Route>
