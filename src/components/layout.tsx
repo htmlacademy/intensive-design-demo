@@ -14,6 +14,10 @@ function Layout (): JSX.Element {
           <Link to='/about' title='/about'>
             About
           </Link>{' '}
+          &bull;{' '}
+          <Link to='/about/secret' title='/about/secret'>
+            My secret
+          </Link>
         </nav>
       </header>
       <hr />
