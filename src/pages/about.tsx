@@ -1,5 +1,5 @@
 import {Fragment} from 'react';
-import {useParams, Outlet} from 'react-router-dom';
+import {useParams} from 'react-router-dom';
 
 function About(): JSX.Element {
   const params = useParams();
@@ -30,7 +30,6 @@ function About(): JSX.Element {
           Stampede Trail, Alaska, U.S.
         </dd>
       </dl>
-      <Outlet />
     </Fragment>
   );
 }

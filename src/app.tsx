@@ -6,12 +6,11 @@ import About from './pages/about';
 import Secret from './pages/secret';
 
 /*
-  С "/about" мы разобрались, но что делать, если у нас
-  может быть страница второго уровня с постоянным адресом?
-  Например, "/about/secret". Да, ситуация крайне редкая.
-  Сейчас React Router считает Secret частью страницы About,
-  а не отдельной страницей "/about/secret".
-  Решим эту проблему в следующем шаге...
+  Решается проблема с помощью индексного элемента.
+  Теперь по адресу /about будет открываться обычная страница About.
+  Если адрес /about/secret, то будет показана страница Secret,
+  а если указан какой-то другой параметр, то снова откроется About,
+  но уже с параметром в консоли.
 */
 
 
@@ -21,7 +20,8 @@ function App (): JSX.Element {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Main />} />
-          <Route path='about' element={<About />} >
+          <Route path='about'>
+            <Route index element={<About />} />
             <Route path=':year' element={<About />} />
             <Route path='secret' element={<Secret />} />
           </Route>
