@@ -4,6 +4,7 @@ import Main from './pages/main';
 import About from './pages/about';
 import Secret from './pages/secret';
 import Error from './error';
+import GoAway from './pages/go-away';
 
 function App (): JSX.Element {
   return (
@@ -15,6 +16,7 @@ function App (): JSX.Element {
             <Route index element={<About />} />
             <Route path='secret' element={<Secret />} />
           </Route>
+          <Route path='go-away' element={<GoAway />} />
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>
