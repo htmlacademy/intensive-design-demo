@@ -3,8 +3,10 @@ import {useParams} from 'react-router-dom';
 
 function About(): JSX.Element {
   const params = useParams();
-  // eslint-disable-next-line no-console
-  console.log(params);
+  if (params.year) {
+    // eslint-disable-next-line no-console
+    console.log(params);
+  }
 
   return (
     <Fragment>
