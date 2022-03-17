@@ -1,0 +1,21 @@
+main {
+  min-height: 500px;
+  border: 3px dashed #ccc;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+}
+
+.list__item {
+  cursor: pointer;
+}
+
+.list__item:hover {
+  color: orangered;
+}
+
+.list__item:not(:last-child) {
+  margin-right: 20px;
+}

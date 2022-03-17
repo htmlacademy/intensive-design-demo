@@ -1,0 +1,39 @@
+{
+  "name": "leaflet-in-react",
+  "version": "1.0.0",
+  "description": "Демонстрация подключения библиотеки Leaflet",
+  "scripts": {
+    "start": "react-scripts start"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "htmlacademy"
+  ],
+  "author": "kam4atka",
+  "license": "MIT",
+  "dependencies": {
+    "leaflet": "^1.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.7.9",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
+    "typescript": "^4.6.3"
+  }
+}
