@@ -1,0 +1,15 @@
+root: true
+
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: "module"
+
+env:
+  es2017: true
+  browser: true
+
+globals:
+  Redux: readonly
+
+extends:
+  "htmlacademy/vanilla"

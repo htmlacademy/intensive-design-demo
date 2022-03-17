@@ -1,0 +1,21 @@
+{
+  "name": "demo-redux-vanila",
+  "version": "1.0.0",
+  "description": "Демонстрация Redux",
+  "scripts": {
+    "start": "browser-sync start --server --no-ui --files \"js/**/*.js\"",
+    "lint": "eslint js/"
+  },
+  "keywords": [
+    "vanillajs",
+    "redux",
+    "htmlacademy"
+  ],
+  "author": "kam4atka",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "eslint": "^8.11.0",
+    "eslint-config-htmlacademy": "^5.0.0"
+  }
+}
